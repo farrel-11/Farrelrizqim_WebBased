@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Assesment 2</title>
+    <style> 
+        h1{
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        form{
+            margin-bottom: 390px;
+        }
+    </style>
+</head>
+<h1>Course Sign Up Page </h1>
+
+<body>
+<p>Please enter your full Name and email! </p>
+<form>
+    <label for="fname">First Name:</label>
+    <input type="text" id="fname" name="fname" placeholder="First Name">
+
+    <label for="lname">Last Name:</label>
+    <input type="text" id="lname" name="lname" placeholder="Last Name">
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="name@example.com">
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" placeholder="password">
+
+    <p>Are you over the age of 18?</p>
+    <label>
+        Yes:
+        <input type="radio" name="age" value="Yes">
+        No:
+        <input type="radio" name="age" value="No">
+    </label>
+
+    <p>Do you have a Credit Card or PayPal?</p>
+    <select name="payment-method" id="payment-method">
+    <option value="credit-card">credit-card</option>
+    <option value="paypal">paypal</option>
+    </select>
+    <input type="submit" value="submit feedback">
+
+</form>
+    <a href="back_page.html">Back</a>
+    <a href="next_page.html">Next</a>
+
+</body>
+</html>
