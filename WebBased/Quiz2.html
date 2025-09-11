@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Universitas Prasetiya Mulya</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      height: 100vh;
+    }
+
+    /* Bagian kiri */
+    .left {
+      flex: 1;
+      background: url('../icon/Prasmul.png') no-repeat center center;
+      background-size: cover;
+      position: relative;
+    }
+
+    .logo {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+    }
+
+    .logo img {
+      height: 60px;
+    }
+
+    /* Bagian kanan */
+    .right {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #f5f5f5;
+      padding: 40px;
+    }
+
+    form {
+      width: 100%;
+      max-width: 350px;
+    }
+
+    h2 {
+      margin-bottom: 10px;
+      font-size: 24px;
+      color: #333;
+    }
+
+    p {
+      margin-bottom: 20px;
+      color: #666;
+      font-size: 14px;
+    }
+
+    input[type="email"], input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    .forgot {
+      text-align: right;
+      font-size: 13px;
+      margin-top: -5px;
+    }
+
+    .forgot a {
+      color: #004a99;
+      text-decoration: none;
+    }
+
+    .checkbox {
+      display: flex;
+      align-items: center;
+      margin: 12px 0;
+      font-size: 14px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background: #004a99;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background: #003366;
+    }
+
+    .small-text {
+      text-align: center;
+      margin-top: 15px;
+      font-size: 14px;
+    }
+
+    .small-text a {
+      color: #004a99;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="left"></div>
+
+  <div class="right">
+    <form>
+      <h2>Welcome</h2>
+      <p>Please enter your login credentials</p>
+
+      <input type="email" placeholder="Enter your email" required>
+      <input type="password" placeholder="Enter your password" required>
+
+      <div class="forgot">
+        <a href="#">Forgot password?</a>
+      </div>
+
+      <div class="captcha-img" style="margin: 18px 0;">
+        <img src="../icon/Captcha.png" alt="Captcha" style="width:100%;max-width:220px;display:block;margin:auto;">
+      </div>
+
+      <button type="submit">Sign In</button>
+
+      <div class="small-text">
+        Don't have an account? <a href="#">Sign up</a><br><br>
+        <small>Please use <b>Google Chrome</b> or <b>Mozilla Firefox</b> for best experience.</small>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
